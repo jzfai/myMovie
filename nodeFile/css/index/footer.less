@@ -1,0 +1,172 @@
+@import "vaild";
+#footer{
+  .fstF{
+    margin-bottom: 20px;
+    padding:20px 10px;
+    background-color: @lightColor;
+    p{
+      padding-bottom: 15px;
+      a{
+        color:@tColor;
+        font-size:1.1em;
+      }
+      span{
+        color:@darkColor;
+      }
+    }
+  }
+  .sndF{
+    text-align: center;
+    line-height: 30px;
+    font-size:1.2em;
+    padding:30px 130px 60px;
+    span{
+      display: inline-block;
+      margin-right: 10px;
+      color:#e60000;
+      font-weight: bold;
+    }
+  }
+}
+
+//楼层定位条
+#floor-index{
+  position: fixed;
+  width:30px;
+  height:60px;
+  top:45%;
+  left:2%;
+  opacity: 0;
+  transition:all .5s linear;
+  a{
+    border-radius:20%;
+    width:60px;
+    height:25px;
+    line-height: 25px;
+    padding:2px;
+    margin-bottom: 1px;
+    color:@tColor;
+    font-size: 1.2em;
+    text-align:center;
+    background-color: #FE9633;
+    display: inline-block;
+  }
+  a:hover{
+    color:#fff;
+
+  }
+  a.active{
+    background-color:#e4393c ;
+  }
+}
+#floor-index.on{
+  opacity: 1;
+}
+
+//表单 模态框
+
+#model{
+  position:fixed;
+  top:0;
+  bottom:0;
+  left: 0;
+  right:0;
+  background-color:rgba(200,200,200,0.5);
+  z-index: 1000;
+  display: none;
+  div.content{
+    margin:40px auto;
+    display: none;
+    position: relative;
+    width:600px;
+    min-height:300px;
+    padding:10px;
+    background-color:#fff;
+    border-radius:5px;
+    border:1px solid #ddd;
+    //header
+    div.header{
+      height:30px;
+      padding:5px 10px;
+      p{
+        font-size: 1.2em;
+        font-weight:bold;
+        color:#000;
+        line-height: 23px;
+      }
+    }
+    //body
+    div.body form{
+      padding:10px 10px 0 10px ;
+      min-height:136px;
+      label{
+        display:block;
+        padding:5px 0;
+      }
+      input{
+        .input;
+        width:50%;
+        display:inline-block;
+      }
+      b{
+        color:@tColor;
+        display:none;
+        font-size: 1.1em;
+        padding-left: 20px;
+      }
+      //input:focus b{
+      //  display:block;
+      //}
+      i{
+        .i();
+      }
+      i.vailCode{
+        display: inline-block;
+        padding:4px 13px ;
+        background-color: rgba(250,250,30,.5);
+        color:@tColor;
+        font-size: 1.3em;
+        font-weight: bold;
+        border: 1px solid transparent;
+        border-radius:20% ;
+      }
+    }
+    div.footer{
+      padding:10px 10px 0 0;
+      height:40px;
+      button.loginBt{
+        .btn();
+        .rl
+
+      }
+      button.resetBt{
+        .btn();
+        .rl;
+        background-color: @rColor;
+      }
+    }
+
+    span.close{
+      padding:1px 6px;
+      border-radius:40%;
+      background-color:#09A5E0;
+      position:absolute;
+      top:3px;
+      right:3px;
+      cursor:pointer;
+      opacity: .5;
+      font-size:1.2em;
+      font-weight: 800;
+    }
+    span.close:hover{
+      color:#aaa;
+    }
+  }
+}
+//canvas
+#c1,#c2{
+  position:relative;
+  top: 10px;
+  left:0;
+  border-radius: 4px;
+}

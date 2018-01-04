@@ -1,0 +1,384 @@
+<!-- section部分-->
+<section id="mSection">
+    <!-- 电影预告-->
+    <div class="yg">
+        <p>影视预告</p>
+        <ul>
+            <li ng-repeat="dish in mList">
+                <a href="#/detail/{{dish.iId}}"><img ng-src="images/{{dish.img}}"/></a>
+                <p><a href="#/detail/{{dish.iId}}">{{dish.title}}</a></p>
+                <div><a href="#/detail/{{dish.iId}}">预告</a></div>
+            </li>
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <!-- 最新电影-->
+    <div class="newView">
+        <!-- 左边栏-->
+        <div class="lf">
+            <div class="nav">
+                <p>动作片</p>
+                <p >共<a>5020</a>部影片>></p>
+            </div>
+            <!-- 电影列表-->
+            <div class="movList movListB">
+                <ul>
+                    <li ng-repeat="dish in dList">
+                        <a href="#/detail/{{dish.iId}}"><img ng-src="images/{{dish.img}}"/></a>
+                        <p><a href="#/detail/{{dish.iId}}">{{dish.title}}</a></p>
+                        <span>{{dish.type}}</span>
+                    </li>
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- 右边栏-->
+        <div class="rt">
+            <dl class="rTitle">
+                <dt><a href="">动作片排行榜</a></dt>
+            </dl>
+            <ul>
+                <li class="rtList " ng-repeat="rm in dList">
+                    <div class="nb">{{$index+1}}</div>
+                    <p> <a href="#/detail/{{rm.iId}}">{{rm.title}}</a></p>
+                    <div class="dt">{{rm.dateTime}}</div>
+                </li>
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+    <!-- 最新电视剧-->
+    <div class="newView">
+        <!-- 左边栏-->
+        <div class="lf">
+            <div class="nav">
+                <p>喜剧片</p>
+                <p>共<a>5020</a>部影片>></p>
+            </div>
+            <!-- 电影列表-->
+            <div class="movList movListT">
+                <ul>
+                    <li ng-repeat="dish in xList">
+                        <a href="#/detail/{{dish.iId}}"><img ng-src="images/{{dish.img}}"/></a>
+                        <p><a href="#/detail/{{dish.iId}}">{{dish.title}}</a></p>
+                        <span>{{dish.type}}</span>
+                    </li>
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- 右边栏-->
+        <div class="rt">
+            <dl class="rTitle">
+                <dt><a href="">喜剧片排行榜</a></dt>
+            </dl>
+            <ul >
+                <li class="rtList " ng-repeat="rm in xList">
+                    <div class="nb">{{$index+1}}</div>
+                    <p> <a href="#/detail/{{rm.iId}}">{{rm.title}}</a></p>
+                    <div class="dt">{{rm.dateTime}}</div>
+                </li>
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+    <div class="newView">
+        <!-- 左边栏-->
+        <div class="lf">
+            <div class="nav">
+                <p>爱情片</p>
+                <p>共<a>5020</a>部影片>></p>
+            </div>
+            <!-- 列表-->
+            <div class="movList movListS">
+                <ul>
+                    <li ng-repeat="dish in aList">
+                        <a href="#/detail/{{dish.iId}}"><img ng-src="images/{{dish.img}}"/></a>
+                        <p><a href="#/detail/{{dish.iId}}">{{dish.title}}</a></p>
+                        <span>{{dish.type}}</span>
+                    </li>
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- 右边栏-->
+        <div class="rt">
+            <dl class="rTitle">
+                <dt><a href="">爱情片排行版</a></dt>
+            </dl>
+            <ul >
+                <li class="rtList " ng-repeat="rm in aList">
+                <div class="nb">{{$index+1}}</div>
+                <p> <a href="#/detail/{{rm.iId}}">{{rm.title}}</a></p>
+                <div class="dt">{{rm.dateTime}}</div>
+                </li>
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+    <!-- 综艺片-->
+    <div class="newView">
+        <!-- 左边栏-->
+        <div class="lf">
+            <div class="nav">
+                <p>科幻片</p>
+                <p >共<a>5020</a>部影片>></p>
+            </div>
+            <!-- 电影列表-->
+            <div class="movList movListF">
+                <ul>
+                    <li ng-repeat="dish in kList">
+                        <a href="#/detail/{{dish.iId}}"><img ng-src="images/{{dish.img}}"/></a>
+                        <p><a href="#/detail/{{dish.iId}}">{{dish.title}}</a></p>
+                        <span>{{dish.type}}</span>
+                    </li>
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- 右边栏-->
+        <div class="rt">
+            <dl class="rTitle">
+                <dt><a href="">科幻片排行榜</a></dt>
+            </dl>
+            <ul >
+                <li class="rtList " ng-repeat="rm in kList">
+                    <div class="nb">{{$index+1}}</div>
+                    <p> <a href="#/detail/{{rm.iId}}">{{rm.title}}</a></p>
+                    <div class="dt">{{rm.dateTime}}</div>
+                </li>
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+</section>

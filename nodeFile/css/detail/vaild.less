@@ -1,0 +1,164 @@
+
+//定制参数
+
+@font-size: 12px;
+@font-family:'΢���ź�', 'Microsoft Yahei', Tahoma, Verdana;
+@line-height:1.4;
+@color:#4D4D4D;
+@tColor:#06A8E9;
+@btColor:#C9C9C9;
+@rColor:lighten(#e60000,30%);
+@darkColor:darken(@btColor,20%);
+@lightColor:lighten(@btColor,20%);
+@btnColor:#d9534f;
+@btn2Color:#5cb85c;
+//方法
+.i(){
+  font-style: normal;
+  display: none;
+  padding:5px;
+}
+.input{
+  height:34px;
+  padding:10px;
+  border-radius: 3px;
+  border:1px solid @btColor;
+  opacity:.7;
+
+}
+.input:focus{
+  border: @rColor;
+}
+//给btn设置统一方法
+.btn(){
+  padding: 6px 12px;
+  margin-right:3px;
+  border: 1px solid transparent;
+  border-radius:4px;
+  background-color: @btn2Color;
+  color:#fff;
+  font-size: 1.1em;
+  box-shadow: 0 0 3px @btn2Color;
+  cursor:pointer;
+}
+//最新电影右边的标题
+.tRight{
+  margin-bottom: 25px;
+  a:hover{
+    color:#fff;
+  }
+  dt{
+    padding:0 40px 0 5px ;
+    a{
+      font-size: 1.2em;
+      color:@tColor;
+    }
+  }
+  dd{
+    a{
+      display: inline-block;
+      text-align: center;
+      background-color:@btColor;
+      width:30px;
+      padding:2px;
+    }
+  }
+  a:hover{
+    background-color:@tColor;
+  }
+  .foc{
+    background-color:#C4C4C4;
+  }
+}
+//
+//a：hover状态 最新电影左边的nav中的ul
+.fHover(@lf,@rt,@top,@bt){
+  a{
+    display:inline-block;
+    padding:@lf @rt @top @bt;
+    text-align: center;
+    line-height:30px;
+    border-top:2px solid transparent;
+  }
+  a:hover{
+    background-color:#fff;
+    border-top-color:@tColor;
+  }
+}
+.hover(){
+  li{
+    padding:20px;
+  }
+  a{
+    color:#1A9CD6;
+    width:100%;
+    height:100%;
+    font-size:1em;
+    text-decoration:none;
+    background-color: #fff;
+    border-top:2px solid #0000cc;
+    border-bottom: none;
+  }
+}
+//flex容器
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fl{float:left;}
+.rl{float:right;}
+//清楚浮动给容器带来的影响
+.clearFloat(){
+  content:'';
+  display:block;
+  clear:both;
+}
+//rotate 动画函数
+@keyframes rot {
+  0%{
+    transform:rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+/*设置基本的样式*/
+*{
+  box-sizing:border-box;
+}
+body{
+  line-height:@line-height;
+  font-size: @font-size;
+  font-family:@font-family;
+  color:@color;
+}
+body,html,ul,p,div,h1,h2,h3,h4,h5,ol,dl,dd{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+#section,#top,#search,#zBox,#rank,#pMain,#banner,#main,#footer,#mSection,#tSection,#vSection,#cSection{
+  margin-left: auto;
+  margin-right:auto;
+  width:960px;
+}
+
+a{
+  color:#666;
+  text-decoration: none;
+}
+a:hover{
+  color:#FE9633;
+  text-decoration:underline;
+}
+.input{
+  padding:10px;
+}
+
+
+
+
+

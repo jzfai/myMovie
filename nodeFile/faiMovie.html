@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/index/index.css"/>
+    <link rel="stylesheet" href="css/detail/detail.css"/>
+    <link rel="stylesheet" href="css/detail/movie.css"/>
+    <link rel="stylesheet" href="css/detail/variety.css"/>
+    <link rel="stylesheet" href="css/detail/play.css"/>
+    <link rel="stylesheet" href="css/detail/rank.css"/>
+    <title>fai影院</title>
+    <script src="importJs/angular.js"></script>
+    <script src="importJs/angular-route.js"></script>
+    <script src="js/ng.js"></script>
+
+</head>
+<body ng-app="myApp" ng-controller="mainCtrl">
+<!-- 设置头部-->
+<header id="header">
+    <!-- top-->
+    <div class="bLine">
+        <div id="top">
+            <span>欢迎来到fai影院，本站最新地址：fai.cc,记得收藏本站</span>
+            <div>
+                <a href="" class="mCart">将fai影院加入收藏夹-</a>
+                <a href="" class="msg">留言名片-</a>
+                <a href="" class="order">RSS订阅</a>
+            </div>
+            <div class="userCenter">
+                <a href="" class="loginBtn">登陆</a>
+                <a href="" class="registerBtn">注册</a>
+            </div>
+        </div>
+    </div>
+    <!-- search-->
+    <div id="search">
+        <!-- logo-->
+        <img src="images/user.png" />
+        <!-- paiHang-->
+        <div class="rang">
+            <i></i>
+            <p><a href="#/rank">排行榜</a></p>
+        </div>
+        <!-- 影视大全-->
+        <div class="mov">
+            <i></i>
+            <div class="rotM"><a href="#movie">影视大全</a></div>
+        </div>
+        <!-- 搜索-->
+        <div class="ct">
+            <p class="sh">
+                <input class="input" type="text" placeholder="请输入电影名字或演员" ng-model="inputValue"/>
+                <button class="btn" ng-click="search()">搜索</button>
+            </p>
+            <!-- crumb-->
+            <ul>
+                <li><a href="">战狼2</a></li>
+                <li><a href="">行尸走肉第八季</a></li>
+                <li><a href="">当你沉睡时</a></li>
+                <li><a href="">银翼杀手2049</a></li>
+                <li><a href="">羞羞的铁拳</a></li>
+                <li><a href="">将军在上</a></li>
+            </ul>
+        </div>
+        <p>
+            <a href="">
+                <span></span>
+                <b>留言名片</b>
+            </a>
+        </p>
+    </div>
+</header>
+<nav id="nav">
+    <ul class="nav">
+        <li><a href="#/index">首页</a></li>
+        <li><a href="#/movie">电影</a></li>
+        <li><a href="#/teleplay">电视剧</a></li>
+        <li><a href="#/cartoon">动漫</a></li>
+        <li><a href="#/variety">综艺片</a></li>
+        <li><a href="#">电影合集</a></li>
+        <li><a href="#">影视预告</a></li>
+        <li class="block"></li>
+        <li><a href="#/rank">排行榜</a></li>
+        <li><a href="#/rank">最近更新</a></li>
+    </ul>
+    <!-- 热门分类-->
+
+</nav>
+<!-- 导航-->
+<div class="rm">
+    <p>热门分类：</p>
+    <ul>
+        <li><a href="#/movie">动作片</a></li>
+        <li><a href="#/movie">喜剧片</a></li>
+        <li><a href="#/movie">爱情片</a></li>
+        <li><a href="#/movie">科幻片</a></li>
+        <li><a href="#/movie">恐怖片</a></li>
+        <li><a href="#/movie">战争片</a></li>
+        <li><a href="#/teleplay">国产剧</a></li>
+        <li><a href="#/teleplay">日韩剧</a></li>
+        <li><a href="#/teleplay">港台剧</a></li>
+        <li><a href="#/teleplay">欧美剧</a></li>
+        <li><a href="#/variety">综艺片</a></li>
+        <li><a href="#/cartoon">动漫</a></li>
+    </ul>
+
+</div>
+<!--盛放代码片段的容器-->
+<div ng-view></div>
+
+<!-- footer部分-->
+<div id="footer">
+    <div class="fstF">
+        <p>
+            <span class="rl">欢迎高质量链接交换,联系邮箱：869653722@qq.com</span>
+            <a href="">合作伙伴</a>
+        </p>
+        <span>fai影院</span>
+    </div>
+    <div class="sndF">
+        <span>友情提示</span>：请影迷们文明留言，竖立中国影迷的光辉形象，你的每一句话不仅仅代表了你的思想，也代表了你的素质。
+        版权声明：所有影音影片均由网友收集提供，本站只是采集相关站点得来的数据，并加以整理对影迷开放。
+        免责声明：本站非常注重你的版权，如果有部分影片侵犯了您的版权请来信，本站会立即将其删除，绝不侵犯您的权益。
+        Copyright © 2013-2017 2tu影院-留言求片 -订阅RSS-站长统计-本站联系邮箱：869653722@qq.com;
+    </div>
+</div>
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/index.js"></script>
+<script src="js/formVaile.js"></script>
+<script>
+   setTimeout(function(){
+       $('#banner ').carousel();
+       $('#floor-index').scrollIndicator();
+   },0)
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

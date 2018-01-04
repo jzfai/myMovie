@@ -1,0 +1,34 @@
+#banner {
+  position: relative;
+  min-height: 250px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+#banner img {
+  width: 100%;
+  height: 250px;
+  position: absolute;
+}
+#banner img.active {
+  z-index: 100;
+}
+#banner div.slide-btn {
+  position: absolute;
+  top: 85%;
+  left: 40%;
+  z-index: 1000;
+}
+#banner div.slide-btn b {
+  padding: 8px 13px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #e4393c;
+  background-color: #FE9633 ;
+  cursor: pointer;
+}
+#banner div.slide-btn b:hover {
+  background-color: #009CFF;
+}
+#banner div.slide-btn b.on {
+  background-color: #fff;
+}

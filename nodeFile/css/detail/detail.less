@@ -1,0 +1,264 @@
+/**
+ * Created by fai on 2017/12/23.
+ */
+@import "vaild";
+  #dMain{
+    .flex;
+    width:960px;
+    margin:0 auto;
+    align-items: flex-start;
+  // 左边栏
+  .mLf{
+     width:698px;
+    .header{
+      background-color: #f7f7F7;
+      padding:8px;
+      border-radius: 5px;
+    }
+    .body{
+      .flex;
+      align-items: flex-start;
+      padding:10px;
+      .blf{
+        padding:10px 10px 10px 0  ;
+        img{
+          display:block;
+          width:192px;
+          height:250px;
+        }
+        a{
+          display: block;
+          background-color: @btn2Color;
+          padding:5px;
+          margin-top:10px;
+          height:38px ;
+          border-radius: 5px;
+          text-align: center;
+          line-height: 27px;
+          font-size: 1.3em;
+          color: #fff;
+
+        }
+      }
+      //右边栏
+      .brt{
+        width:500px;
+        height:280px;
+        padding:10px 10px 10px 4px  ;
+        p{
+          padding:0 10px 10px 0;
+          font-size: 1.3em;
+          font-weight: bold;
+        }
+        ul{
+          li{
+            output{
+              color:@btnColor;
+            }
+            padding:10px 10px 10px 0 ;
+            i.pl{
+              float: right;
+              width:90px;
+              height:22px;
+
+            }
+          }
+        }
+      }
+    }
+    .footer{
+      padding:10px;
+      background-color: #F7F7F7;
+      a{
+        display: inline-block;
+        margin-left: 16px;
+      }
+    }
+  }
+
+// 右边栏
+   .mRt{
+     width:250px;
+     min-height:168px;
+     padding:10px;
+     .rTop{
+      padding:15px;
+      border-radius: 5px;
+      border: 1px solid #F3F3F3;
+
+       span{
+         font-size: 1.2em;
+         font-weight: bold;
+       }
+       output{
+         display: inline-block;
+         margin-top:20px;
+         a{
+           color:#e4393c;
+         }
+       }
+     }
+     .rFt{
+       padding:15px;
+       margin-top:30px;
+       border-radius: 5px;
+       border: 1px solid #F3F3F3;
+     }
+   }
+}
+
+//rFooter模块
+#dFooter{
+  width:960px;
+  margin:0 auto;
+  .tip{
+    padding:8px;
+    margin-top:30px;
+    margin-bottom: 30px;
+    border:1px dotted #333;
+    output{
+      color:#FE0002;
+    }
+    span{
+      line-height:28px;
+    }
+  }
+
+  .playUrl{
+    border:1px solid @btColor;
+    padding:3px;
+    margin-top: 30px;
+    div{
+      border-bottom: 1px solid @btColor;
+      padding:10px;
+      output{
+        float:right;
+        padding:4px 8px 0 0;
+        span{
+          line-height:10px;
+        }
+      }
+      >span{
+        font-size:1.4em;
+        font-weight: 400;
+      }
+    }
+    p{
+      padding:8px 10px 10px 10px ;
+      a{
+        display:inline-block;
+        width:120px;
+        height:28px;
+        padding:5px;
+        font-size: 1.2em;
+        font-weight:400;
+        background-color: #EEEEEE;
+        text-align: center;
+        line-height: 15px;
+      }
+      a:hover{
+        background-color: #07A7E1;
+      }
+    }
+
+  }
+//  下载地址
+  .downUrl{
+    margin-top: 30px;
+    padding:5px;
+    border:1px solid @btColor;
+    .header{
+      //一副小图
+      border-bottom: 1px solid @btColor;
+      padding:15px 10px ;
+      >output{
+        font-size: 1.3em;
+        font-weight: 500;
+        line-height: 10px;
+      }
+      span{
+        float: right;
+      }
+    }
+    //下载地址bodyb部分
+    .addr{
+      .flex();
+      padding:20px 5px 15px 5px ;
+      div{
+        margin-right: 500px;
+        overflow: hidden;
+      }
+      p{
+        a{
+          .btn();
+        }
+      }
+    }
+  }
+//  剧情介绍
+  .introduce{
+    p{
+      padding:10px;
+      margin-bottom: 30px;
+      a{
+        margin-left: 50px;
+        display:inline-block;
+        width:150px;
+        height:28px;
+        padding:5px;
+        font-size: 1.1em;
+        font-weight:400;
+        background-color: #EEEEEE;
+        text-align: center;
+        line-height: 15px;
+        color:#222;
+      }
+      a:hover{
+        background-color: #07A7E1;
+      }
+    }
+    div{
+      h3{
+        font-size: 1.2em;
+      }
+    }
+    .guess{
+      margin-bottom: 30px;
+      h2{
+        font-size: 1.2em;
+        margin-bottom: 10px;
+      }
+      ul{
+        .flex;
+        li{
+
+          margin-left: 10px;
+          span{
+            display: block;
+            text-align: center;
+          }
+          a{
+            display: inline-block;
+            padding:1px;
+            border:1px solid @btColor;
+            width:96px;
+            height:134px;
+
+            img{
+
+              width:92px;
+              height:130px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+}
+
+
+
+
+
+

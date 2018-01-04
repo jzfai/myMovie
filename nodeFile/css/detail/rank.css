@@ -1,0 +1,212 @@
+.input {
+  height: 34px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #C9C9C9;
+  opacity: .7;
+}
+.input:focus {
+  border: #ff8080;
+}
+.tRight {
+  margin-bottom: 25px;
+}
+.tRight a:hover {
+  color: #fff;
+}
+.tRight dt {
+  padding: 0 40px 0 5px ;
+}
+.tRight dt a {
+  font-size: 1.2em;
+  color: #06A8E9;
+}
+.tRight dd a {
+  display: inline-block;
+  text-align: center;
+  background-color: #C9C9C9;
+  width: 30px;
+  padding: 2px;
+}
+.tRight a:hover {
+  background-color: #06A8E9;
+}
+.tRight .foc {
+  background-color: #C4C4C4;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fl {
+  float: left;
+}
+.rl {
+  float: right;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*设置基本的样式*/
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.4;
+  font-size: 12px;
+  font-family: '΢���ź�', 'Microsoft Yahei', Tahoma, Verdana;
+  color: #4D4D4D;
+}
+body,
+html,
+ul,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#section,
+#top,
+#search,
+#zBox,
+#rank,
+#pMain,
+#banner,
+#main,
+#footer,
+#mSection,
+#tSection,
+#vSection,
+#cSection {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #FE9633;
+  text-decoration: underline;
+}
+.input {
+  padding: 10px;
+}
+#rank {
+  padding-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  align-items: flex-start;
+  min-height: 400px;
+}
+#rank .rlSide {
+  width: 250px;
+  min-height: 235px;
+  margin: 0 20px 0 2px ;
+}
+#rank .rlSide p {
+  font-size: 1.6em;
+  font-weight: 700;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px dotted #C9C9C9;
+  background-color: #F7F7F7;
+}
+#rank .rlSide ul {
+  padding: 1px 0 10px 0;
+  background-color: #F7F7F7;
+}
+#rank .rlSide ul li a {
+  display: block;
+  padding: 8px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+#rank .rlSide ul li a:hover {
+  background-color: #fff;
+}
+#rank .rSide {
+  padding: 10px;
+  border: 1px solid #EAEAEA;
+  border-radius: 5px;
+  width: 700px;
+  min-height: 600px;
+}
+#rank .rSide > p {
+  margin-bottom: 30px;
+  border-bottom: 1px solid #C9C9C9;
+  padding-top: 4px;
+}
+#rank .rSide > p output {
+  display: inline-block;
+  border-bottom: 2px solid #06A8E9;
+  margin-bottom: -1px;
+  font-size: 1.3em;
+  font-weight: 500;
+  padding: 5px;
+}
+#rank .rSide .box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#rank .rSide .box .movie {
+  width: 300px;
+}
+#rank .rSide .box .movie p {
+  color: #06A8E9;
+  font-weight: 500;
+  font-size: 1.1em;
+  padding: 0 0 0 8px;
+}
+#rank .rSide .box .movie ul li {
+  padding: 10px;
+}
+#rank .rSide .box .movie ul li {
+  border-bottom: 1px dotted #C9C9C9;
+  padding-left: 13px;
+}
+#rank .rSide .box .movie ul li span:nth-child(2) {
+  display: inline-block;
+  margin-left: 30px;
+  cursor: pointer;
+}
+#rank .rSide .box .movie ul li span:nth-child(2):hover {
+  color: red;
+}
+#rank .rSide .box .movie ul li span:last-child {
+  display: inline-block;
+  float: right;
+}
+#rank .rSide .box .movie ul a {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #06A8E9;
+  font-weight: 500;
+}
+#rank .rSide .box .movie ul > a {
+  padding: 15px 0 0 0 ;
+}
+#rank .rSide .box .movie ul li:first-child span:nth-child(2) {
+  margin-right: 15px;
+}

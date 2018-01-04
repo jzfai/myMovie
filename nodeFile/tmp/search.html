@@ -1,0 +1,151 @@
+<!--搜索详情左边栏-->
+<div id="zBox">
+    <div class="zlSide">
+        <p>分类检索</p>
+        <ul>
+            <li><a href="#/rank">排行榜</a></li>
+            <li><a href="#/movie">电影</a></li>
+            <li><a href="#/teleplay">电影剧</a></li>
+            <li><a href="#/cartoon">动漫</a></li>
+            <li><a href="#/variety">综艺片</a></li>
+        </ul>
+    </div>
+    <!--右边栏-->
+    <div class="zrSide">
+        <div class="zTop">
+            <p>动漫筛选</p>
+            <dl>
+                <dt>大分类：</dt>
+                <dd>电影</dd>
+                <dd>电视剧</dd>
+                <dd>综艺片</dd>
+            </dl>
+            <dl>
+                <dt>电影分类：</dt>
+                <dd>动作片</dd>
+                <dd>喜剧片</dd>
+                <dd>爱情片</dd>
+                <dd>科幻片</dd>
+                <dd>恐怖片</dd>
+                <dd>剧情片</dd>
+                <dd>战争片</dd>
+                <dd>纪录片</dd>
+                <dd>微电影</dd>
+            </dl>
+            <dl>
+                <dt>电视剧分类：</dt>
+                <dd>国产剧</dd>
+                <dd>港台剧</dd>
+                <dd>欧美剧</dd>
+                <dd>日韩剧</dd>
+                <dd>新马泰</dd>
+            </dl>
+            <dl>
+                <dt>地区：</dt>
+                <dd>大陆</dd>
+                <dd>香港</dd>
+                <dd>日本</dd>
+                <dd>韩国</dd>
+                <dd>美国</dd>
+                <dd>德国</dd>
+                <dd>英国</dd>
+                <dd>法国</dd>
+                <dd>印度</dd>
+                <dd>泰国</dd>
+                <dd>其他</dd>
+            </dl>
+            <dl>
+                <dt>年代：</dt>
+                <dd>2017</dd>
+                <dd>2016</dd>
+                <dd>2015</dd>
+                <dd>2014</dd>
+                <dd>2013</dd>
+                <dd>2012</dd>
+                <dd>2011</dd>
+                <dd>2010</dd>
+                <dd>2009</dd>
+                <dd>2008</dd>
+                <dd>2007</dd>
+                <dd>2006</dd>
+                <dd>more</dd>
+            </dl>
+        </div>
+        <!-- list-->
+        <ul class="zList">
+            <li ng-repeat="dish in searchList">
+                <p><a href="#/detail/{{dish.iId}}"><img ng-src="images/{{dish.img}}" /></a></p>
+                <div class="zr">
+                    <p>
+                        <span>{{dish.title}}</span>
+                        <output>&nbsp;{{dish.dateYear}}</output>
+                    </p>
+                    <div>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                    </div>
+                    <dl>
+                        <dt>{{dish.actor}}</dt>
+                    </dl>
+                    <dl>
+                        <dt>状态</dt>
+                        <dd>{{dish.dateTime}}</dd>
+                    </dl>
+                    <div>
+                        <span>类型：{{dish.type}}</span>
+                        <span>更新：{{dish.dateDate}}</span>
+                    </div>
+                    <div class="btn">
+                        <a href="#/play">观看</a>
+                        <a href="#/detail/{{dish.iId}}">下载</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!-- 分页-->
+        <ul class="page">
+            << <li><a href="" ng-click="searchPage($event)" class="active">1</a></li>
+            <li><a href=""  ng-click="searchPage($event)" >2</a></li>
+            <li><a href=""  ng-click="searchPage($event)">3</a></li>
+            <li><a href=""  ng-click="searchPage($event)">4</a></li>
+            <li><a href=""  ng-click="searchPage($event)">5</a></li>
+            <li><a href=""  ng-click="searchPage($event)">更多</a></li> >>
+        </ul>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

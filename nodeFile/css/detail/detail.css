@@ -1,0 +1,356 @@
+/**
+ * Created by fai on 2017/12/23.
+ */
+.input {
+  height: 34px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #C9C9C9;
+  opacity: .7;
+}
+.input:focus {
+  border: #ff8080;
+}
+.tRight {
+  margin-bottom: 25px;
+}
+.tRight a:hover {
+  color: #fff;
+}
+.tRight dt {
+  padding: 0 40px 0 5px ;
+}
+.tRight dt a {
+  font-size: 1.2em;
+  color: #06A8E9;
+}
+.tRight dd a {
+  display: inline-block;
+  text-align: center;
+  background-color: #C9C9C9;
+  width: 30px;
+  padding: 2px;
+}
+.tRight a:hover {
+  background-color: #06A8E9;
+}
+.tRight .foc {
+  background-color: #C4C4C4;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fl {
+  float: left;
+}
+.rl {
+  float: right;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*设置基本的样式*/
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.4;
+  font-size: 12px;
+  font-family: '΢���ź�', 'Microsoft Yahei', Tahoma, Verdana;
+  color: #4D4D4D;
+}
+body,
+html,
+ul,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#section,
+#top,
+#search,
+#zBox,
+#rank,
+#pMain,
+#banner,
+#main,
+#footer,
+#mSection,
+#tSection,
+#vSection,
+#cSection {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #FE9633;
+  text-decoration: underline;
+}
+.input {
+  padding: 10px;
+}
+#dMain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 960px;
+  margin: 0 auto;
+  align-items: flex-start;
+}
+#dMain .mLf {
+  width: 698px;
+}
+#dMain .mLf .header {
+  background-color: #f7f7F7;
+  padding: 8px;
+  border-radius: 5px;
+}
+#dMain .mLf .body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+  padding: 10px;
+}
+#dMain .mLf .body .blf {
+  padding: 10px 10px 10px 0  ;
+}
+#dMain .mLf .body .blf img {
+  display: block;
+  width: 192px;
+  height: 250px;
+}
+#dMain .mLf .body .blf a {
+  display: block;
+  background-color: #5cb85c;
+  padding: 5px;
+  margin-top: 10px;
+  height: 38px ;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 27px;
+  font-size: 1.3em;
+  color: #fff;
+}
+#dMain .mLf .body .brt {
+  width: 500px;
+  height: 280px;
+  padding: 10px 10px 10px 4px  ;
+}
+#dMain .mLf .body .brt p {
+  padding: 0 10px 10px 0;
+  font-size: 1.3em;
+  font-weight: bold;
+}
+#dMain .mLf .body .brt ul li {
+  padding: 10px 10px 10px 0 ;
+}
+#dMain .mLf .body .brt ul li output {
+  color: #d9534f;
+}
+#dMain .mLf .body .brt ul li i.pl {
+  float: right;
+  width: 90px;
+  height: 22px;
+}
+#dMain .mLf .footer {
+  padding: 10px;
+  background-color: #F7F7F7;
+}
+#dMain .mLf .footer a {
+  display: inline-block;
+  margin-left: 16px;
+}
+#dMain .mRt {
+  width: 250px;
+  min-height: 168px;
+  padding: 10px;
+}
+#dMain .mRt .rTop {
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #F3F3F3;
+}
+#dMain .mRt .rTop span {
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#dMain .mRt .rTop output {
+  display: inline-block;
+  margin-top: 20px;
+}
+#dMain .mRt .rTop output a {
+  color: #e4393c;
+}
+#dMain .mRt .rFt {
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 1px solid #F3F3F3;
+}
+#dFooter {
+  width: 960px;
+  margin: 0 auto;
+}
+#dFooter .tip {
+  padding: 8px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px dotted #333;
+}
+#dFooter .tip output {
+  color: #FE0002;
+}
+#dFooter .tip span {
+  line-height: 28px;
+}
+#dFooter .playUrl {
+  border: 1px solid #C9C9C9;
+  padding: 3px;
+  margin-top: 30px;
+}
+#dFooter .playUrl div {
+  border-bottom: 1px solid #C9C9C9;
+  padding: 10px;
+}
+#dFooter .playUrl div output {
+  float: right;
+  padding: 4px 8px 0 0;
+}
+#dFooter .playUrl div output span {
+  line-height: 10px;
+}
+#dFooter .playUrl div > span {
+  font-size: 1.4em;
+  font-weight: 400;
+}
+#dFooter .playUrl p {
+  padding: 8px 10px 10px 10px ;
+}
+#dFooter .playUrl p a {
+  display: inline-block;
+  width: 120px;
+  height: 28px;
+  padding: 5px;
+  font-size: 1.2em;
+  font-weight: 400;
+  background-color: #EEEEEE;
+  text-align: center;
+  line-height: 15px;
+}
+#dFooter .playUrl p a:hover {
+  background-color: #07A7E1;
+}
+#dFooter .downUrl {
+  margin-top: 30px;
+  padding: 5px;
+  border: 1px solid #C9C9C9;
+}
+#dFooter .downUrl .header {
+  border-bottom: 1px solid #C9C9C9;
+  padding: 15px 10px ;
+}
+#dFooter .downUrl .header > output {
+  font-size: 1.3em;
+  font-weight: 500;
+  line-height: 10px;
+}
+#dFooter .downUrl .header span {
+  float: right;
+}
+#dFooter .downUrl .addr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5px 15px 5px ;
+}
+#dFooter .downUrl .addr div {
+  margin-right: 500px;
+  overflow: hidden;
+}
+#dFooter .downUrl .addr p a {
+  padding: 6px 12px;
+  margin-right: 3px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: #fff;
+  font-size: 1.1em;
+  box-shadow: 0 0 3px #5cb85c;
+  cursor: pointer;
+}
+#dFooter .introduce p {
+  padding: 10px;
+  margin-bottom: 30px;
+}
+#dFooter .introduce p a {
+  margin-left: 50px;
+  display: inline-block;
+  width: 150px;
+  height: 28px;
+  padding: 5px;
+  font-size: 1.1em;
+  font-weight: 400;
+  background-color: #EEEEEE;
+  text-align: center;
+  line-height: 15px;
+  color: #222;
+}
+#dFooter .introduce p a:hover {
+  background-color: #07A7E1;
+}
+#dFooter .introduce div h3 {
+  font-size: 1.2em;
+}
+#dFooter .introduce .guess {
+  margin-bottom: 30px;
+}
+#dFooter .introduce .guess h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+#dFooter .introduce .guess ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#dFooter .introduce .guess ul li {
+  margin-left: 10px;
+}
+#dFooter .introduce .guess ul li span {
+  display: block;
+  text-align: center;
+}
+#dFooter .introduce .guess ul li a {
+  display: inline-block;
+  padding: 1px;
+  border: 1px solid #C9C9C9;
+  width: 96px;
+  height: 134px;
+}
+#dFooter .introduce .guess ul li a img {
+  width: 92px;
+  height: 130px;
+}

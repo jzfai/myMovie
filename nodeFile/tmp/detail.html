@@ -1,0 +1,139 @@
+<div id="dMain">
+    <div class="mLf">
+        <div class="header">
+            <span>当前位置：</span>
+            <a href="">首页>></a>
+            <a href="">电影>></a>
+            <a href="">{{dList.type}}>></a>
+            <a href="">{{dList.title}}>></a>
+        </div>
+        <div class="body">
+            <div class="blf">
+                <img ng-src="images/{{dList.img}}" alt=""/>
+                <a href="#/play">立即播放</a>
+            </div>
+            <div class="brt">
+                <p>{{dList.title}}</p>
+                <ul>
+                    <li><output>上映年代：</output>{{dList.dateTime}}<output>&nbsp;&nbsp;&nbsp; 状态：</output><span>1080p</span></li>
+                    <li><output>类型：</output> {{dList.type}}</li>
+                    <li><output>主演：</output>{{dList.actor}} </li>
+                    <li><output>地区：</output>{{dList.region}} </li>
+                    <li><output>更新日期：</output>{{dList.dateTime}} <i class="pl">查看评论</i></li>
+                    <li><output>剧情：</output>{{dList.detail}}<output><a href="">详细</a></output> </li>-->
+                    <li>
+                        <!-- 评论-->
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                        <img src="" alt=""/>
+                    </li>
+                </ul>
+            </div>
+            <div></div>
+        </div>
+        <div class="footer">
+            相关影片：<a href=""></a>战狼2017<a href="">速度与激情8</a><a href="">新木乃伊</a>
+        </div>
+    </div>
+    <div class="mRt">
+        <div class="rTop">
+            <span>fai影院手机站</span>
+            <output>地址：<a href="#">869653722@qq.com</a></output>
+        </div>
+        <div class="rFt">
+            <p><output> 分享给好友：</output></p>
+            <div>
+                <img src="" alt=""/>
+                <img src="" alt=""/>
+                <img src="" alt=""/>
+                <img src="" alt=""/>
+                <img src="" alt=""/>
+                <img src="" alt=""/>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="dFooter">
+    <!-- 提示-->
+    <div class="tip">
+        <output>温馨提示:</output>
+        <span>本站影片支持在线点播和迅雷下载；你不但可以通过手机在线播放影片，而且还可以通过手机迅雷将影片下载到手机离线观看；如影片不能下载/播放，或者没有找到你要的影片,可以留言板给<a>我们留言</a>；感谢你对<a>fai影院</a>的支持！</span>
+    </div>
+    <!-- 云播-->
+    <div class="playUrl">
+        <div>
+            <output>
+                <i></i>
+                <span>fai云播,即点即播</span>
+            </output>
+            <span>1号云播</span>
+        </div>
+        <p><a href="#/play">高清</a></p>
+    </div>
+    <div class="playUrl">
+        <div>
+            <output>
+                <i></i>
+                <span>fai云播,即点即播</span>
+            </output>
+            <span>2号云播</span>
+        </div>
+        <p><a href="#/play">高清</a></p>
+    </div>
+    <!-- 下载地址-->
+    <div class="downUrl">
+        <div class="header">
+            <span>
+                <i></i>
+                <output>影视交流群：8696537222 获取高速版迅雷</output>
+            </span>
+            <i></i>
+            <output>下载地址一</output>
+
+        </div>
+        <div class="addr">
+            <div>
+                <input type="checkbox"/>
+                <span>{{dList.title}}</span>
+            </div>
+            <p><a href="">迅雷下载</a></p>
+            <p><a href="">旋风下载</a></p>
+            <p><a href="">小米下载</a></p>
+            <p><a href="">网盘下载</a></p>
+        </div>
+    </div>
+    <div class="introduce">
+        <p>
+            <input type="checkbox"/> 全选
+            <a href="">迅雷下载选中的文件</a>
+        </p>
+        <div>
+            <h3>剧情介绍</h3>
+            <p>{{dList.detail}}</p>
+        </div>
+        <div class="guess">
+            <h2>猜你喜欢</h2>
+            <ul>
+                <li ng-repeat="dish in fList"><a href="#/detail/{{dish.iId+1}}"><img  ng-src="images/{{dish.img}}" alt=""/></a><span>{{dish.title}}</span></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+

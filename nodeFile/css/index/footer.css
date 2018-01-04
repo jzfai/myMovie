@@ -1,0 +1,281 @@
+.input {
+  height: 34px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #C9C9C9;
+  opacity: .7;
+}
+.input:focus {
+  border: #ff8080;
+}
+.tRight {
+  margin-bottom: 25px;
+}
+.tRight a:hover {
+  color: #fff;
+}
+.tRight dt {
+  padding: 0 40px 0 5px ;
+}
+.tRight dt a {
+  font-size: 1.2em;
+  color: #06A8E9;
+}
+.tRight dd a {
+  display: inline-block;
+  text-align: center;
+  background-color: #C9C9C9;
+  width: 30px;
+  padding: 2px;
+}
+.tRight a:hover {
+  background-color: #06A8E9;
+}
+.tRight .foc {
+  background-color: #C4C4C4;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fl {
+  float: left;
+}
+.rl {
+  float: right;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*设置基本的样式*/
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.4;
+  font-size: 12px;
+  font-family: '΢���ź�', 'Microsoft Yahei', Tahoma, Verdana;
+  color: #4D4D4D;
+}
+body,
+html,
+ul,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#section,
+#top,
+#search,
+#banner,
+#main,
+#footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #FE9633;
+  text-decoration: underline;
+}
+.input {
+  padding: 10px;
+}
+#footer .fstF {
+  margin-bottom: 20px;
+  padding: 20px 10px;
+  background-color: #fcfcfc;
+}
+#footer .fstF p {
+  padding-bottom: 15px;
+}
+#footer .fstF p a {
+  color: #06A8E9;
+  font-size: 1.1em;
+}
+#footer .fstF p span {
+  color: #969696;
+}
+#footer .sndF {
+  text-align: center;
+  line-height: 30px;
+  font-size: 1.2em;
+  padding: 30px 130px 60px;
+}
+#footer .sndF span {
+  display: inline-block;
+  margin-right: 10px;
+  color: #e60000;
+  font-weight: bold;
+}
+#floor-index {
+  position: fixed;
+  width: 30px;
+  height: 60px;
+  top: 45%;
+  left: 2%;
+  opacity: 0;
+  transition: all .5s linear;
+}
+#floor-index a {
+  border-radius: 20%;
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  padding: 2px;
+  margin-bottom: 1px;
+  color: #06A8E9;
+  font-size: 1.2em;
+  text-align: center;
+  background-color: #FE9633;
+  display: inline-block;
+}
+#floor-index a:hover {
+  color: #fff;
+}
+#floor-index a.active {
+  background-color: #e4393c ;
+}
+#floor-index.on {
+  opacity: 1;
+}
+#model {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(200, 200, 200, 0.5);
+  z-index: 1000;
+  display: none;
+}
+#model div.content {
+  margin: 40px auto;
+  display: none;
+  position: relative;
+  width: 600px;
+  min-height: 300px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+#model div.content div.header {
+  height: 30px;
+  padding: 5px 10px;
+}
+#model div.content div.header p {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #000;
+  line-height: 23px;
+}
+#model div.content div.body form {
+  padding: 10px 10px 0 10px ;
+  min-height: 136px;
+}
+#model div.content div.body form label {
+  display: block;
+  padding: 5px 0;
+}
+#model div.content div.body form input {
+  height: 34px;
+  border-radius: 3px;
+  border: 1px solid #C9C9C9;
+  opacity: .7;
+  padding: 10px;
+  width: 50%;
+  display: inline-block;
+}
+#model div.content div.body form b {
+  color: #06A8E9;
+  display: none;
+  font-size: 1.1em;
+  padding-left: 20px;
+}
+#model div.content div.body form i {
+  font-style: normal;
+  display: none;
+  padding: 5px;
+}
+#model div.content div.body form i.vailCode {
+  display: inline-block;
+  padding: 4px 13px ;
+  background-color: rgba(250, 250, 30, 0.5);
+  color: #06A8E9;
+  font-size: 1.3em;
+  font-weight: bold;
+  border: 1px solid transparent;
+  border-radius: 20% ;
+}
+#model div.content div.footer {
+  padding: 10px 10px 0 0;
+  height: 40px;
+}
+#model div.content div.footer button.loginBt {
+  padding: 6px 12px;
+  margin-right: 3px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: #fff;
+  font-size: 1.1em;
+  box-shadow: 0 0 3px #5cb85c;
+  cursor: pointer;
+  float: right;
+}
+#model div.content div.footer button.resetBt {
+  padding: 6px 12px;
+  margin-right: 3px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #5cb85c;
+  color: #fff;
+  font-size: 1.1em;
+  box-shadow: 0 0 3px #5cb85c;
+  cursor: pointer;
+  float: right;
+  background-color: #ff8080;
+}
+#model div.content span.close {
+  padding: 1px 6px;
+  border-radius: 40%;
+  background-color: #09A5E0;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+  cursor: pointer;
+  opacity: .5;
+  font-size: 1.2em;
+  font-weight: 800;
+}
+#model div.content span.close:hover {
+  color: #aaa;
+}
+#c1,
+#c2 {
+  position: relative;
+  top: 10px;
+  left: 0;
+  border-radius: 4px;
+}

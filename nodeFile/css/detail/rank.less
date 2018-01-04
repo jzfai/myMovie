@@ -1,0 +1,105 @@
+@import "vaild";
+
+#rank{
+  padding-top:10px;
+  .flex;
+  margin-bottom: 30px;
+  align-items: flex-start;
+  min-height: 400px;
+  .rlSide{
+    width:250px;
+    min-height:235px;
+    margin:0 20px 0 2px ;
+    p{
+      font-size: 1.6em;
+      font-weight:700;
+      padding:8px;
+      text-align: center;
+      border-bottom: 1px dotted @btColor;
+      background-color: #F7F7F7;
+    }
+    ul{
+      padding:1px 0 10px 0;
+      background-color: #F7F7F7;
+      li{
+        a{
+          display: block;
+          padding:8px;
+          margin-top:10px;
+          text-align: center;
+          font-size: 1.2em;
+        }
+        a:hover{
+          background-color: #fff;
+        }
+      }
+    }
+  }
+//  右边栏
+  .rSide{
+    padding:10px;
+    border: 1px solid #EAEAEA;
+    border-radius: 5px;
+    width:700px;
+    min-height:600px;
+    >p{
+      margin-bottom: 30px;
+      border-bottom: 1px solid @btColor;
+      padding-top: 4px;
+      output{
+        display: inline-block;
+        border-bottom: 2px solid @tColor;
+        margin-bottom: -1px;
+        font-size: 1.3em;
+        font-weight: 500;
+        padding:5px;
+      }
+    }
+    .box{
+      .flex;
+      flex-wrap: wrap;
+      .movie{
+        width:300px;
+        p{
+          color:@tColor;
+          font-weight: 500;
+          font-size: 1.1em;
+          padding:0 0 0 8px;
+        }
+        ul{
+          li{
+            padding:10px
+          }
+          li{
+            border-bottom: 1px dotted @btColor;
+            padding-left: 13px;
+          }
+          li span:nth-child(2){
+            display: inline-block;
+            margin-left: 30px;
+            cursor: pointer;
+          }
+          li span:nth-child(2):hover{
+            color:red;
+          }
+          li span:last-child{
+            display: inline-block;
+            float:right;
+          }
+          a{
+            display: inline-block;
+            margin-bottom: 20px;
+            color:@tColor;
+            font-weight: 500;
+          }
+          >a{
+            padding:15px 0 0 0 ;
+          }
+        }
+        ul li:first-child span:nth-child(2){
+          margin-right: 15px;
+        }
+      }
+    }
+  }
+}

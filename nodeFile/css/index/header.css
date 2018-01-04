@@ -1,0 +1,150 @@
+/*header*/
+.input {
+  height: 34px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #C9C9C9;
+  opacity: .7;
+}
+.input:focus {
+  border: #ff8080;
+}
+.tRight {
+  margin-bottom: 25px;
+}
+.tRight a:hover {
+  color: #fff;
+}
+.tRight dt {
+  padding: 0 40px 0 5px ;
+}
+.tRight dt a {
+  font-size: 1.2em;
+  color: #06A8E9;
+}
+.tRight dd a {
+  display: inline-block;
+  text-align: center;
+  background-color: #C9C9C9;
+  width: 30px;
+  padding: 2px;
+}
+.tRight a:hover {
+  background-color: #06A8E9;
+}
+.tRight .foc {
+  background-color: #C4C4C4;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fl {
+  float: left;
+}
+.rl {
+  float: right;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*设置基本的样式*/
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.4;
+  font-size: 12px;
+  font-family: '΢���ź�', 'Microsoft Yahei', Tahoma, Verdana;
+  color: #4D4D4D;
+}
+body,
+html,
+ul,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#section,
+#top,
+#search,
+#banner,
+#main,
+#footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #FE9633;
+  text-decoration: underline;
+}
+.input {
+  padding: 10px;
+}
+#header > div.bLine {
+  border-bottom: 1px solid #DDDDDD;
+  border-top: 1px solid #DDDDDD;
+  margin-bottom: 5px;
+}
+#top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 0;
+  height: 40px;
+  font-size: .9em;
+  /*font-weight: bold;*/
+  line-height: 40px;
+}
+#top .mCart {
+  color: #E4393C;
+}
+#top .msg {
+  color: #09A5E0;
+}
+/*用户中心*/
+#select-item {
+  position: relative;
+}
+#top > .drop a {
+  color: #009CFF;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+#top > .drop > a:hover {
+  color: #FF912F;
+}
+#top div.userCenter a {
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  background-color: #5cb85c;
+  color: #fff;
+  font-size: 1.2em;
+  line-height: 26px  ;
+  padding: 0 12px;
+  margin-left: 4px ;
+  box-shadow: 0 0 3px #5cb85c;
+  cursor: pointer;
+}

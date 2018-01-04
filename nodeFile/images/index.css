@@ -1,0 +1,596 @@
+/*设置基本的样式*/
+*{
+    box-sizing:border-box;
+}
+body,html,ul,p,div,h1,h2,h3,h4,h5,ol,dl,dd{
+    margin:0;
+    padding:0;
+    list-style:none;
+    line-height:1.4;
+    font-size: 12px;
+    font-family:'΢���ź�', 'Microsoft Yahei', Tahoma, Verdana;
+
+}
+#top,#nav ,#section,#header,#banner,#main,#footer{
+    margin-left: auto;
+    margin-right:auto;
+    width:960px;
+}
+.fl{float:left}
+.rl{float:right}
+.clear{
+    clear:both;
+}
+a{
+    color:#666;
+    text-decoration: none;
+}
+a:hover{
+    color:#FE9633;
+    text-decoration:underline;
+}
+.input{
+    padding:10px;
+}
+/*header*/
+#top{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom:1px solid #DDDDDD;
+    padding:10px 0;
+    margin-bottom:5px;
+    height:40px;
+    font-size: .9em;
+    /*font-weight: bold;*/
+    line-height:40px;
+}
+#top .mCart{
+    color:#E4393C;
+}
+#top .msg{
+    color:#09A5E0;
+}
+
+/*用户中心*/
+#top .drop{
+    position:relative;
+}
+#top >.drop a{
+    color:#009CFF;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#top >.drop>a:hover{
+    color:#FF912F;
+}
+#top .drop>ul{
+    position:absolute;
+    top:100%;
+    left: 0;
+    z-index: 1;
+    display:block;
+    width: 60px;
+    height:20px;
+    background-color: #fff;
+}
+/*#top>.drop:hover #top>.drop>ul{
+    display:block;
+}*/
+#top .drop >ul >li{
+    text-align: center;
+    padding-top: 4px;
+}
+#top .drop >ul >li>a{
+    color:#333333;
+    font-size: 1em;
+}
+#top .drop >ul>li:hover{
+    background-color: #4BA7DE;
+}
+/*search*/
+#search{
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    margin-bottom:3px;
+}
+/*search logo*/
+#search img{
+    width:100px;
+    height:100px;
+    border-radius: 50%;
+    animation: rot 5s ease infinite;
+}
+@keyframes rot {
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+/*rotate 影视大全*/
+#search ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin:4px 0;
+    font-size: .8em;
+
+}
+#search .rang i{
+    background:url(i.png) no-repeat 0 -68px;
+    width:25px;
+    height:26px;
+}
+#search .mov i{
+    background:url(i.png) no-repeat -36px -68px;
+    width:28px;
+    height:27px;
+    animation: rot 5s linear infinite;
+}
+#search i{
+    display: block;
+}
+#search p span{
+    display: inline-block;
+    width:23px;
+    height:20px;
+    margin:0 13px 0 20px;
+    background: url(i.png) no-repeat -18px -6px;
+}
+#search>p{
+    background-color:#F6F6F6;
+    text-align: center;
+    display:flex;
+    align-items: center;
+    line-height: 36px;
+    width:130px;
+    height:36px;
+}
+#search>p>a{
+    display: flex;
+    align-items: center;
+    height:36px;
+    width: 100%;
+}
+#search.ct p{
+    width: 410px;
+    height: 38px;
+}
+
+#search .ct ul{
+    width: 410px;
+    height:17px;
+    overflow: hidden;
+}
+/*input*/
+#search input{
+    width:326px;
+    height:38px;
+    margin-right: 3px;
+    border-radius: 3px;
+    border:2px solid #ddd;
+}
+#search .btn{
+    width:70px;
+    height:38px;
+    background-color: #4BA7DE;
+    color:#fff;
+    border-radius: 20%;
+    border: none;
+    cursor: pointer;
+}
+#search .rang {
+   width:50px;  height:55px;
+    text-align:center;
+
+}
+#search .mov {
+    width:50px;  height:55px;
+    text-align: center;
+}
+#search .mov  i{
+    display: block;
+    margin: 3px auto 5px;
+}
+#search .rang  i{
+    display: block;
+    margin: 3px auto 6px;
+}
+
+/*nav*/
+#nav{
+    margin-bottom: 20px;
+    border-radius:4px;
+}
+#nav .nav{
+    background-color:#07A7E1;
+    padding: 10px;
+}
+#nav>ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    font-size:1.2em;
+
+}
+#nav>ul>li.block{
+    width:200px;
+    margin-left: 40px;
+}
+#nav>ul>li>a{
+    color:#fff;
+}
+/*热门分类*/
+#nav .rm{
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size:1em;
+    font-weight:bold;
+    padding:10px;
+}
+#nav .rm ul{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width:600px;
+}
+#nav .rm ul li a{
+    color:#333333;
+}
+#nav>.rm>p{
+    color:#FF912F;
+    padding-right: 7px;
+    margin-top: 1px;
+
+}
+
+
+/*main*/
+
+/*main lf .l*/
+
+#main{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom:20px;
+
+}
+#main>.lf{
+    width:258px;
+    height:458px;
+    border: 1px solid #F3F2F0;
+    padding:10px 13px 10px 8px;
+}
+#main>.lf>div{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 14px;
+    font-size:1.1em;
+}
+#main>.lf>ul>li{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 12px 10px 7px;
+}
+#main>.lf>div>a{
+    color:#06A8E9;
+}
+#main>.lf>div>div>a{
+    color:#0AA3E6;
+}
+
+
+/*main lf .lfList*/
+
+#main .lfList .nb{
+    color:#FF7D00;
+    margin-left: 5px;
+}
+#main .lfList .dt{
+    color:#9797A4;
+}
+#main .lfList>p>a{
+    color:#4D4D4D;
+    margin-right: 100px;
+}
+#main .lfList>p>a:hover{
+    color:#FE9633;
+}
+/*main rt .ys*/
+
+#main .rt{
+    border: 1px solid #F3F2F0;
+    border-left: none;
+    width:700px;
+    height:459px;
+}
+#main .rt>.ys{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px;
+    background-color:#F8F8F8;
+}
+
+#main .rt>.ys>p>a{
+    color:#06AFEC;
+    font-size: 1.25em;
+}
+#main .rt>.ys>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:230px;
+    flex-grow: 1;
+}
+#main .ys>ul>li>a{
+    color:#4D4D4D;
+    display:inline-block;
+    padding: 2px;
+}
+#main .ys>ul>li>a:hover{
+    color:#fff;
+    background-color:#0070C0;
+}
+
+
+/*main  .movList*/
+#main .movList{
+    padding:25px 25px 10px 25px  ;
+}
+#main .movList>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#main .movList>ul>li{
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+#main .movList>ul img{
+
+    width:86px;
+    height:122px;
+
+}
+#main .movList>ul>li>a{
+    text-align: center;
+    padding-top: 1.5px;
+    display:block;
+    width:92px;
+    height:128px;
+    border: 1px solid #A1A4A9;
+    background-color: #fff;
+}
+#main .movList>ul>li>p>a{
+    display: block;
+    text-align: center;
+    color:#5770CB;
+    padding: 8px 0;
+
+}
+#main .movList>ul>li>p>a:hover{
+    color:#FE9633;
+
+}
+#main .movList>ul>li span{
+    display: block;
+    color:#A2A2A2;
+    font-size: .9em;
+    text-align: center;
+}
+
+/*section*/
+
+/*.yg*/
+#section {
+    margin-bottom: 20px;
+    border-top: 1px solid #E8E7E5;
+}
+#section .yg{
+    margin-bottom: 20px;
+}
+#section .yg>p{
+    color:#06AFEC;
+    font-size: 1.25em;
+    padding:10px 0;
+}
+#section .yg>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#section .yg>ul>li>a>img{
+    width:100px;
+    height:142px;
+}
+#section .yg>ul>li>a{
+    text-align: center;
+    padding-top: 1.5px;
+    display:block;
+    width:106px;
+    height:148px;
+    border: 1px solid #A1A4A9;
+    background-color: #fff;
+}
+#section .yg>ul>li>p>a{
+    display: block;
+    text-align: center;
+    color:#5770CB;
+     margin: 8px 0
+}
+#section .yg>ul>li>p>a:hover{
+    color:#FE9633;
+}
+#section .yg>ul>li>div{
+    display: block;
+    color:#A2A2A2;
+
+    text-align: center;
+
+}
+#section .yg>ul>li>div>a{
+     display: inline-block;
+     padding:7px 29px ;
+     background-color: #C9C9C9;
+     border-radius:4px;
+     font-size: .9em;
+ }
+#section .yg>ul>li>div>a:hover{
+    background-color: #1C9AD5;
+}
+
+
+/*scetion newView*/
+
+
+
+/*scetion newview lf nav*/
+
+#section .newView{
+    margin-bottom: 20px;
+    border:1px solid #ECECEC;
+    border-right:none;
+    display: flex;
+    justify-content: space-between;
+
+}
+#section .newView .lf{
+    width:700px;
+    height:493px;
+}
+#section .newView .lf .nav p{
+    font-size:1.3em;
+    color:#009CFF;
+}
+#section .newView .lf .nav{
+    padding:10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F8F8F8;
+}
+#section .newView .lf .nav>ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:500px;
+}
+
+#section .newView .lf .nav a:hover{
+    color:#FF912F;
+}
+
+
+
+
+/*section newView lf movList*/
+#section .movList{
+    padding:25px 25px 10px 25px  ;
+}
+#section .movList>ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#section .movList>ul>li{
+    padding-right: 25px;
+    padding-bottom: 25px;
+}
+#section .movList>ul img{
+
+    width:86px;
+    height:122px;
+
+}
+#section .movList>ul>li>a{
+    text-align: center;
+    padding-top: 1.5px;
+    display:block;
+    width:92px;
+    height:128px;
+    border: 1px solid #A1A4A9;
+    background-color: #fff;
+}
+#section .movList>ul>li>p>a{
+    display: block;
+    text-align: center;
+    color:#5770CB;
+    padding: 8px 0;
+}
+#section .movList>ul>li>p>a:hover{
+    color:#FE9633;
+
+}
+#section .movList>ul>li span{
+    display: block;
+    color:#A2A2A2;
+    font-size: .9em;
+    text-align: center;
+}
+
+
+
+
+/*section newView rt*/
+#section .rt{
+    width:258px;
+    min-height:470px;
+    border:1px solid #A1A4A9;
+    padding:10px;
+}
+
+#section .newView>.rt{
+    width:258px;
+    height:458px;
+    border: 1px solid #F3F2F0;
+    padding:10px 13px 10px 8px;
+}
+#section .newView>.rt>div{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom: 14px;
+    font-size:1.1em;
+}
+#section .newView>.rt>ul>li{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px 12px 10px 7px;
+}
+#section .newView>.rt>div>a{
+    color:#06A8E9;
+}
+#section .newView>.rt>div>div>a{
+    color:#0AA3E6;
+}
+#section .newView .rtList .nb{
+    color:#FF7D00;
+    margin-left: 5px;
+}
+#section .newView .rtList .dt{
+    color:#9797A4;
+}
+#section .newView .rtList>p>a{
+    color:#4D4D4D;
+    margin-right: 100px;
+}
+#section .newView .rtList>p>a:hover{
+    color:#FE9633;
+}
+
+
+
+
+

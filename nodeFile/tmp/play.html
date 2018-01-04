@@ -1,0 +1,17 @@
+<div id="pMain">
+    <output><a href="">首页</a> >> <a href="">综艺片</a> >> <a href="">Running Man 2017</a></output>
+    <p>Running Man 2017</p>
+    <video src="video/test.mp4" controls loop muted poster="" autoplay preload="auto">
+        <source src="">
+        你的浏览器不支持video
+    </video>
+    <div id="guess">
+        <h2>猜你喜欢</h2>
+        <ul>
+            <li ng-repeat="dish in fList"><a href="#/detail/{{dish.iId}}"><img ng-src="images/{{dish.img}}"/></a><span>{{dish.title}}</span></li>
+
+        </ul>
+    </div>
+</div>
+
+

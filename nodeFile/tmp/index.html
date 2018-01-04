@@ -1,0 +1,622 @@
+
+<!-- 广告-->
+<div id="banner">
+    <img src="images/lunbo/banner_01.jpg"  class="active"/>
+    <img src="images/lunbo/banner_02.jpg" />
+    <img src="images/lunbo/banner_03.jpg"/>
+    <img src="images/lunbo/banner_04.jpg" />
+    <img src="images/lunbo/banner_05.jpg"/>
+    <div class="slide-btn">
+        <b class="on">1</b>
+        <b>2</b>
+        <b>3</b>
+        <b>4</b>
+        <b>5</b>
+    </div>
+</div>
+<!-- main部分-->
+<div id="main">
+    <!-- lfSide-->
+    <div class="lf">
+        <div>
+            <a href="">今日更新45部</a>
+            <div class="fl"><a href="">最近更新>></a></div>
+        </div>
+        <ul class="asideGx">
+            <!--<li class="lfList">-->
+            <!--<div class="nb">01</div>-->
+            <!--<p> <a href="">猎场</a></p>-->
+            <!--<div class="dt">12-10</div>-->
+            <!--</li>-->
+            <!--<li class="lfList">-->
+            <!--<div class="nb">01</div>-->
+            <!--<p> <a href="">猎场</a></p>-->
+            <!--<div class="dt">12-10</div>-->
+            <!--</li>-->
+            <!--<li class="lfList">-->
+            <!--<div class="nb">01</div>-->
+            <!--<p> <a href="">猎场</a></p>-->
+            <!--<div class="dt">12-10</div>-->
+            <!--</li>-->
+            <!--<li class="lfList">-->
+            <!--<div class="nb">01</div>-->
+            <!--<p> <a href="">猎场</a></p>-->
+            <!--<div class="dt">12-10</div>-->
+            <!--</li>-->
+            <!--<li class="lfList">-->
+            <!--<div class="nb">01</div>-->
+            <!--<p> <a href="">猎场</a></p>-->
+            <!--<div class="dt">12-10</div>-->
+            <!--</li>-->
+            <!--<li class="lfList">-->
+            <!--<div class="nb">01</div>-->
+            <!--<p> <a href="">猎场</a></p>-->
+            <!--<div class="dt">12-10</div>-->
+            <!--</li>-->
+
+        </ul>
+    </div>
+    <!-- rtside-->
+    <div class="rt">
+        <!-- rm-->
+        <div class="ys">
+            <p><a href="">热门影视</a></p>
+            <ul>
+                <li><a href="">电影</a></li>
+                <li><a href="">电视剧</a></li>
+                <li><a href="">动漫</a></li>
+                <li><a href="">综艺片</a></li>
+                <li><a href="">电影合集</a></li>
+                <li><a href="">影视预告</a></li>
+            </ul>
+        </div>
+        <!-- 电影列表-->
+        <div class="movList movListG">
+            <ul>
+                <!--<li>-->
+                <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                <!--<p><a href="">Running</a></p>-->
+                <!--<span>综艺片</span>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                <!--<p><a href="">Running</a></p>-->
+                <!--<span>综艺片</span>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                <!--<p><a href="">Running</a></p>-->
+                <!--<span>综艺片</span>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                <!--<p><a href="">Running</a></p>-->
+                <!--<span>综艺片</span>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                <!--<p><a href="">Running</a></p>-->
+                <!--<span>综艺片</span>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                <!--<p><a href="">Running</a></p>-->
+                <!--<span>综艺片</span>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                <!--<p><a href="">Running</a></p>-->
+                <!--<span>综艺片</span>-->
+                <!--</li>-->
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- section部分-->
+<section id="section">
+    <!-- 影视预告-->
+    <div class="yg">
+        <p>影视预告</p>
+        <ul>
+            <li ng-repeat="dish in fsList">
+            <a href="#/detail/{{dish.iId}}"><img ng-src="images/{{dish.img}}"/></a>
+            <p><a href="">{{dish.title}}</a></p>
+            <div><a href="">预告</a></div>
+            </li>
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+            <!--<li>-->
+            <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+            <!--<p><a href="">寻梦环游记</a></p>-->
+            <!--<div><a href="">预告</a></div>-->
+            <!--</li>-->
+        </ul>
+    </div>
+    <!-- 最新电影-->
+    <div class="newView">
+        <!-- 左边栏-->
+        <div class="lf">
+            <div class="nav">
+                <p>最新电影</p>
+                <ul>
+                    <li><a href="">最新</a></li>
+                    <li><a href="">动作片</a></li>
+                    <li><a href="">喜剧片</a></li>
+                    <li><a href="">爱情片</a></li>
+                    <li><a href="">科幻片</a></li>
+                    <li><a href="">恐怖片</a></li>
+                    <li><a href="">剧情片</a></li>
+
+                </ul>
+            </div>
+            <!-- 电影列表-->
+            <div class="movList movListB">
+                <ul>
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- 右边栏-->
+        <div class="rt">
+            <dl class="rTitle">
+                <dt><a href="">热门电影</a></dt>
+                <dd><a href="">日</a></dd>
+                <dd><a href="">周</a></dd>
+                <dd class="foc"><a href="">月</a></dd>
+                <dd><a href="">总</a></dd>
+            </dl>
+            <ul class="asideRm">
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+    <!-- 最新电视剧-->
+    <div class="newView">
+        <!-- 左边栏-->
+        <div class="lf">
+            <div class="nav">
+                <p>最新电视剧</p>
+                <ul>
+                    <li><a href="">最新</a></li>
+                    <li><a href="">国产剧</a></li>
+                    <li><a href="">港台剧</a></li>
+                    <li><a href="">欧美剧</a></li>
+                    <li><a href="">日韩剧</a></li>
+                    <li><a href="">新马泰</a></li>
+                </ul>
+            </div>
+            <!-- 电影列表-->
+            <div class="movList movListT">
+                <ul>
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- 右边栏-->
+        <div class="rt">
+            <dl class="rTitle">
+                <dt><a href="">热门电视剧</a></dt>
+                <dd><a href="">日</a></dd>
+                <dd><a href="">周</a></dd>
+                <dd class="foc"><a href="">月</a></dd>
+                <dd><a href="">总</a></dd>
+            </dl>
+            <ul class="asideDsj">
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+    <!-- 动漫-->
+    <div class="newView">
+        <!-- 左边栏-->
+        <div class="lf">
+            <div class="nav">
+                <p>最新动漫</p>
+                <ul>
+                    <li><a href="">最新</a></li>
+                    <li><a href="">动漫</a></li>
+                </ul>
+            </div>
+            <!-- 列表-->
+            <div class="movList movListS">
+                <ul>
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- 右边栏-->
+        <div class="rt">
+            <dl class="rTitle">
+                <dt><a href="">热门动漫</a></dt>
+                <dd><a href="">日</a></dd>
+                <dd><a href="">周</a></dd>
+                <dd class="foc"><a href="">月</a></dd>
+                <dd><a href="">总</a></dd>
+            </dl>
+            <ul class="asideDm">
+                <!--<li class="rtList ">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+    <!-- 综艺片-->
+    <div class="newView">
+        <!-- 左边栏-->
+        <div class="lf">
+            <div class="nav">
+                <p>最新综艺片</p>
+                <ul>
+                    <li><a href="">最新</a></li>
+                    <li><a href="">国产剧</a></li>
+                    <li><a href="">港台剧</a></li>
+                    <li><a href="">欧美剧</a></li>
+                    <li><a href="">日韩剧</a></li>
+                    <li><a href="">新马泰</a></li>
+                </ul>
+            </div>
+            <!-- 电影列表-->
+            <div class="movList movListF">
+                <ul>
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+                    <!--<li>-->
+                    <!--<a href=""><img src="images/1bf46ec502f21344.jpg"/></a>-->
+                    <!--<p><a href="">Running</a></p>-->
+                    <!--<span>综艺片</span>-->
+                    <!--</li>-->
+
+                </ul>
+            </div>
+
+        </div>
+        <!-- 右边栏-->
+        <div class="rt">
+            <dl class="rTitle">
+                <dt><a href="">综艺片</a></dt>
+                <dd><a href="">日</a></dd>
+                <dd><a href="">周</a></dd>
+                <dd class="foc"><a href="">月</a></dd>
+                <dd><a href="">总</a></dd>
+            </dl>
+            <ul class="asideZyp">
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+                <!--<li class="rtList">-->
+                <!--<div class="nb">01</div>-->
+                <!--<p> <a href="">猎场</a></p>-->
+                <!--<div class="dt">12-10</div>-->
+                <!--</li>-->
+            </ul>
+        </div>
+    </div>
+</section>
+
+<div ng-include="'tmp/include/footer.html'"></div>
+<!-- 楼层条-->
+<div id="floor-index">
+    <a href="#header">header</a>
+    <a href="#banner">banner</a>
+    <a href="#main">main</a>
+    <a href="#section">section</a>
+    <a href="#footer">footer</a>
+</div>
+<!-- 模态框实现-->
+<div id="model">
+    <div class="content uLogin">
+        <div class="header">
+            <p>用户登陆</p>
+        </div>
+        <div class="body">
+            <form class="from" >
+                <label for="">用户名:</label>
+                <input type="text" name="txt" value="fai"/>
+                <i>img</i>
+                <b></b>
+                <label for="">密码:</label>
+                <input type="text" name="pwd" value="kuhu8866"/>
+                <i>img</i>
+                <b></b>
+                <label for="">请输入验证码:</label>
+                <input type="text"/>
+                <!--<i class="vailCode"></i>-->
+                <canvas id="c2"></canvas>
+                <b ></b>
+            </form>
+        </div>
+        <div class="footer">
+            <button class="resetBt">重置</button>
+            <button class="loginBt">登陆</button>
+        </div>
+
+        <span class="close">×</span>
+    </div>
+    <!-- 用户注册-->
+    <div class="content uRegister">
+        <div class="header">
+            <p>用户注册</p>
+        </div>
+        <div class="body">
+            <form class="from" >
+                <label for="">用户名:</label>
+                <input type="text" value="fai" name="txt"/>
+                <i></i>
+                <b></b>
+                <label for="">密码:</label>
+                <input type="text" name="pwd" value="kh8866"/>
+                <i></i>
+                <b></b>
+                <label for="">手机号码:</label>
+                <input type="text" value="18046303240"/>
+                <i></i>
+                <b></b>
+                <label for="">邮箱:</label>
+                <input type="text" value="869653722@qq.com"/>
+                <i></i>
+                <b></b>
+                <label for="">验证码:</label>
+                <input type="text"/>
+                <!--<i class="vailCode"></i>-->
+                <canvas id="c1"></canvas>
+                <b></b>
+            </form>
+        </div>
+        <div class="footer">
+            <button class="resetBt">重置</button>
+            <button class="loginBt">注册</button>
+        </div>
+
+        <span class="close">×</span>
+    </div>
+</div>
+
+
+

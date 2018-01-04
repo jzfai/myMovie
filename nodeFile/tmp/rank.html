@@ -1,0 +1,67 @@
+<div id="rank">
+    <div class="rlSide">
+        <p>分类检索</p>
+        <ul>
+            <li><a href="#/rank">排行榜首页</a></li>
+            <li><a href="#/movie">电影</a></li>
+            <li><a href="#/teleplay">电影剧</a></li>
+            <li><a href="#/cartoon">动漫</a></li>
+            <li><a href="#/variety">综艺片</a></li>
+        </ul>
+    </div>
+    <div class="rSide">
+        <p>
+            <output>fai影院排行榜</output>
+        </p>
+       <div class="box">
+           <!-- 电影-->
+           <div class="movie">
+               <p>电影</p>
+               <ul>
+                   <li ng-repeat="dish in tList">
+                       <span>{{$index}}</span>
+                       <span ng-click="jumpParams('/detail',dish.iId)">{{dish.title}}</span>
+                       <span>{{dish.score}}</span>
+                   </li>
+                   <a href="" class="rl">完整榜单>></a>
+               </ul>
+           </div>
+           <!-- teleplay-->
+           <div class="movie" >
+               <p>电视剧</p>
+               <ul>
+                   <li ng-repeat="dish in tList" >
+                       <span>{{$index}}</span>
+                       <span ng-click="jumpParams('/detail',dish.iId)">{{dish.title}}</span>
+                       <span>{{dish.score}}</span>
+                   </li>
+                   <a href="" class="rl">完整榜单>></a>
+               </ul>
+           </div>
+           <!-- cartoon-->
+           <div class="movie" >
+               <p>动漫</p>
+               <ul>
+                   <li ng-repeat="dish in cList" >
+                       <span>{{$index}}</span>
+                       <span ng-click="jumpParams('/detail',dish.iId)">{{dish.title}}</span>
+                       <span>{{dish.score}}</span>
+                   </li>
+                   <a href="" class="rl">完整榜单>></a>
+               </ul>
+           </div>
+           <!-- variety-->
+           <div class="movie" >
+               <p>综艺片</p>
+               <ul>
+                   <li ng-repeat="dish in vList">
+                       <span>{{$index}}</span>
+                       <span ng-click="jumpParams('/detail',dish.iId)">{{dish.title}}</span>
+                       <span>{{dish.score}}</span>
+                   </li>
+                   <a href="" class="rl">完整榜单>></a>
+               </ul>
+           </div>
+       </div>
+    </div>
+</div>

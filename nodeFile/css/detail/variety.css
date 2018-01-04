@@ -1,0 +1,257 @@
+.input {
+  height: 34px;
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid #C9C9C9;
+  opacity: .7;
+}
+.input:focus {
+  border: #ff8080;
+}
+.tRight {
+  margin-bottom: 25px;
+}
+.tRight a:hover {
+  color: #fff;
+}
+.tRight dt {
+  padding: 0 40px 0 5px ;
+}
+.tRight dt a {
+  font-size: 1.2em;
+  color: #06A8E9;
+}
+.tRight dd a {
+  display: inline-block;
+  text-align: center;
+  background-color: #C9C9C9;
+  width: 30px;
+  padding: 2px;
+}
+.tRight a:hover {
+  background-color: #06A8E9;
+}
+.tRight .foc {
+  background-color: #C4C4C4;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fl {
+  float: left;
+}
+.rl {
+  float: right;
+}
+@keyframes rot {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*设置基本的样式*/
+* {
+  box-sizing: border-box;
+}
+body {
+  line-height: 1.4;
+  font-size: 12px;
+  font-family: '΢���ź�', 'Microsoft Yahei', Tahoma, Verdana;
+  color: #4D4D4D;
+}
+body,
+html,
+ul,
+p,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+ol,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#section,
+#top,
+#search,
+#zBox,
+#rank,
+#pMain,
+#banner,
+#main,
+#footer,
+#mSection,
+#tSection,
+#vSection,
+#cSection {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+a {
+  color: #666;
+  text-decoration: none;
+}
+a:hover {
+  color: #FE9633;
+  text-decoration: underline;
+}
+.input {
+  padding: 10px;
+}
+#zBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-items: flex-start;
+}
+#zBox .zlSide {
+  width: 250px;
+  height: 235px;
+  margin: 10px 20px 0 2px ;
+}
+#zBox .zlSide p {
+  font-size: 1.8em;
+  font-weight: 600;
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px dotted #C9C9C9;
+  background-color: #F7F7F7;
+}
+#zBox .zlSide ul {
+  padding: 1px 0 10px 0;
+  background-color: #F7F7F7;
+}
+#zBox .zlSide ul li a {
+  display: block;
+  padding: 8px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.2em;
+}
+#zBox .zlSide ul li a:hover {
+  background-color: #fff;
+}
+#zBox .zrSide {
+  width: 698px;
+  min-height: 218px;
+}
+#zBox .zrSide .zTop {
+  padding: 13px 5px 13px 10px;
+  border-bottom: 1px dotted #C9C9C9;
+  margin-bottom: 27px;
+}
+#zBox .zrSide .zTop p {
+  font-size: 1.4em;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#zBox .zrSide .zTop dl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  justify-content: flex-start;
+}
+#zBox .zrSide .zTop dl dt {
+  font-weight: 400;
+}
+#zBox .zrSide .zTop dl dd {
+  margin-left: 15px;
+}
+#zBox .zrSide .zList {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#zBox .zrSide .zList li {
+  width: 330px;
+  min-height: 148px;
+  display: flex;
+}
+#zBox .zrSide .zList li > p {
+  width: 92px;
+  height: 128px;
+  padding: 1px;
+  border: 1px solid #C9C9C9;
+}
+#zBox .zrSide .zList li > p img {
+  width: 88px;
+  height: 124px;
+}
+#zBox .zrSide .zList li .zr {
+  margin-left: 10px;
+}
+#zBox .zrSide .zList li .zr p {
+  margin-bottom: 8px;
+}
+#zBox .zrSide .zList li .zr p span {
+  font-size: 1.2em;
+  font-weight: 600;
+  color: #2C89C6;
+}
+#zBox .zrSide .zList li .zr div img {
+  min-height: 25px;
+}
+#zBox .zrSide .zList li .zr dl {
+  display: flex;
+  padding: 6px 0;
+}
+#zBox .zrSide .zList li .zr dl dd {
+  margin-left: 5px;
+}
+#zBox .zrSide .zList li .zr div span:last-child {
+  display: inline-block;
+  margin-left: 15px;
+}
+#zBox .zrSide .zList li .zr .btn {
+  margin-top: 5px;
+}
+#zBox .zrSide .zList li .zr .btn a:first-child {
+  display: inline-block;
+  padding: 3px 10px;
+  background-color: #44B2E7;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 700;
+}
+#zBox .zrSide .zList li .zr .btn a:nth-child(2) {
+  display: inline-block;
+  padding: 3px 10px;
+  background-color: #7DD040;
+  border-radius: 3px;
+  color: #fff;
+  font-weight: 700;
+}
+#zBox .zrSide .page {
+  margin: 30px 20px 20px  20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: flex-end;
+}
+#zBox .zrSide .page li a {
+  display: inline-block;
+  padding: 2px 12px;
+  background-color: #5cb85c;
+  margin: 0 3px ;
+  border-radius: 40%;
+  color: #fff;
+}
+#zBox .zrSide .page li a:hover {
+  background-color: #007aff;
+}
+#zBox .zrSide .page li a.active {
+  background-color: #C9C9C9;
+  color: blue;
+}
