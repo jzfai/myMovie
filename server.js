@@ -9,7 +9,7 @@ const data=require('./data');
 var app=express();
 http.createServer(app).listen(8080);
 
-app.use(express.static('nodeFile'));
+app.use(express.static('webFile'));
 
 app.get('/page',data.page);
 app.get('/login',data.login);
