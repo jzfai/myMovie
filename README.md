@@ -13,5 +13,5 @@ mysql+node.js+angular.js+ajax+jquery+less
 
 
 3.在浏览器输入地址
-http://127.0.0.1:8080/faiMovie.html#/index
+http://127.0.0.1:8080/faiMovie.html
 即可访问
