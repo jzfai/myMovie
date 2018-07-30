@@ -199,7 +199,7 @@ app.controller('movieCtrl',['$scope','$http',
 
                });
         $http
-            .get("/xMovie?type=喜剧片")
+            .get("/movie/xMovie?type=喜剧片")
             .success(function(data){
               for(var i=0;i<data.length;i++){
                   data[i].dateTime=new Date(data[i].dateTime).toLocaleDateString().slice(5);
@@ -207,7 +207,7 @@ app.controller('movieCtrl',['$scope','$http',
                 $scope.xList=data.slice(0,12);
             });
         $http
-                .get("/dMovie?type=动作片")
+                .get("/movie/dMovie?type=动作片")
                 .success(function(data){
                 for(var i=0;i<data.length;i++){
                     data[i].dateTime=new Date(data[i].dateTime).toLocaleDateString().slice(5);
@@ -215,7 +215,7 @@ app.controller('movieCtrl',['$scope','$http',
                  $scope.dList=data.slice(0,12)
             });
         $http
-             .get("/aMovie?type=爱情片")
+             .get("/movie/aMovie?type=爱情片")
               .success(function(data){
                 for(var i=0;i<data.length;i++){
                     data[i].dateTime=new Date(data[i].dateTime).toLocaleDateString().slice(5);
@@ -223,7 +223,7 @@ app.controller('movieCtrl',['$scope','$http',
                 $scope.aList=data.slice(0,12)
             });
         $http
-            .get("/kMovie?type=动作片")
+            .get("/movie/kMovie?type=动作片")
             .success(function(data){
                 for(var i=0;i<data.length;i++){
                     data[i].dateTime=new Date(data[i].dateTime).toLocaleDateString().slice(5);
