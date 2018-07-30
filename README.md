@@ -1,5 +1,5 @@
 # myMovie
-mysql+node.js+angular.js+ajax+jquery+less
+使用技术 mysql+node.js+angular.js+ajax+jquery+less
 
 
 使用
