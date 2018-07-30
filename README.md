@@ -3,6 +3,7 @@
 
 
 使用
+
 1.运行 git clone https://github.com/jzfai/myMovie.git
 
 2.运行 npm install 
